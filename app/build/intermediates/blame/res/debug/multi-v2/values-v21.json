@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\nucleo\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
+                {
+                    "source": "D:\\WarMachine\\Coding\\Android_workstation\\nucleo\\prototypeOne\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "284"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "577"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-2\\files-2.1\\9790b671db697250286a253fb82fcd84\\res\\values-v21\\values-v21.xml",
                     "from": {
@@ -20,25 +39,6 @@
                         "endLines": "2,3,4,5,268,269,276,280,318,323",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,19601,19727,20184,20480,22532,22870"
-                    }
-                },
-                {
-                    "source": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "284"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endLines": "10",
-                        "endColumns": "12",
-                        "endOffsets": "577"
                     }
                 },
                 {

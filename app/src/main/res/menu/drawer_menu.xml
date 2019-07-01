@@ -8,12 +8,12 @@
         <item android:checked="true"
             android:id="@+id/recordsMenuButton"
             android:icon="@drawable/ic_records"
-            android:title="View records" />
+            android:title="View Records" />
 
         <item
             android:id="@+id/analysisMenuButton"
-            android:icon="@drawable/ic_analysis"
-            android:title="Perform Analysis" />
+            android:icon="@drawable/ic_displaypicture"
+            android:title="View Profile" />
     </group>
 
         <item

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
+            "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\nucleo\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-2\\files-2.1\\a5c92343580fd35ef67bb5c360f4a9e1\\res\\values-or\\values-or.xml",

@@ -52,7 +52,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_home);
 
         Log.i("customLog", "HomeActivity -> onCreate(): executed");
-        Clusters.loadClusters();
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -129,10 +128,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             //Toast.makeText(this, "Activity under construction", Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.analysisMenuButton:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AnalyseFragment()).commit();
-                drawer.closeDrawer(GravityCompat.START);
-                break;
+//            case R.id.analysisMenuButton:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AnalyseFragment()).commit();
+//                drawer.closeDrawer(GravityCompat.START);
+//                break;
 
             case R.id.signoutMenuButton:
                 logout();

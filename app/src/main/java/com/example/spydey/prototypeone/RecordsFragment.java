@@ -50,7 +50,8 @@ public class RecordsFragment<FirebaseRecyclerOptions> extends Fragment {
         Log.i("customLog", "RecordFragment -> onCreateView: executed");
         view = inflater.inflate(R.layout.fragment_records, container, false);
         auth = FirebaseAuth.getInstance();
-        dbRef = FirebaseDatabase.getInstance().getReference("UserData").child(auth.getUid());
+        //dbRef = FirebaseDatabase.getInstance().getReference("UserData").child(auth.getUid());
+        dbRef = FirebaseDatabase.getInstance().getReference("ib-17e48");
 
         options = new com.firebase.ui.database.FirebaseRecyclerOptions.Builder<RecordItem>()
                 .setQuery(dbRef, RecordItem.class).build();
@@ -64,13 +65,16 @@ public class RecordsFragment<FirebaseRecyclerOptions> extends Fragment {
             protected void onBindViewHolder(@NonNull RecordViewHoder holder, final int position, @NonNull final RecordItem model) {
 
                 String recordName = getSnapshots().getSnapshot(position).getKey();
-                holder.textView.setText(recordName);
+                holder.titleTextView.setText(model.is_user);
+                holder.openTimeDateTextView.setText("Open: "+model.open);
+                holder.closeTimeDateTextView.setText("Close: "+model.close);
+
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String modelStringArray[] = {model.diabetes, model.heartrate, model.bloodpressure, model.bmi,
-                                model.age, model.stress, model.meditation, model.attention, model.probability};
                         Intent intent = new Intent(getContext(), RecordDataActivity.class);
+
+                        String modelStringArray[] = {model.is_user, model.open, model.close};
                         intent.putExtra("modelStringArray", modelStringArray);
                         startActivity(intent);
                     }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\nucleo\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-2\\files-2.1\\7d3544a1d265ff93fca3d5f61c7a3478\\res\\values-bs\\values.xml",

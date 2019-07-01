@@ -8,8 +8,7 @@ import android.widget.TextView;
 
 public class RecordDataActivity extends AppCompatActivity {
 
-    public TextView diabetesTextView, heartRateTextView, bloodPressureTextView, BMITextView,
-            ageTextView, stressTextView, attentionTextView, meditationTextView, probabilityTextView;
+    public TextView identityTextView, openDateTextView, closeDateTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,24 +24,12 @@ public class RecordDataActivity extends AppCompatActivity {
         Log.i("customLog", "RecordDataActivity -> onCreate(): IntendData");
         for (String data:modelStringArray) { Log.i("customLog", "modelStringArray[]: "+data); }
 
-        diabetesTextView = findViewById(R.id.diabetesRecordData);
-        heartRateTextView = findViewById(R.id.heartRateRecordData);
-        bloodPressureTextView = findViewById(R.id.bloodPressureRecordData);
-        BMITextView = findViewById(R.id.BMIRecordData);
-        ageTextView = findViewById(R.id.ageRecordData);
-        stressTextView = findViewById(R.id.stressRecordData);
-        //attentionTextView = findViewById(R.id.attentionRecordData);
-        //meditationTextView = findViewById(R.id.meditationRecordData);
-        probabilityTextView = findViewById(R.id.probabilityRecordData);
+        identityTextView = findViewById(R.id.identityRecordData);
+        openDateTextView = findViewById(R.id.openRecordData);
+        closeDateTextView = findViewById(R.id.closeRecordData);
 
-        diabetesTextView.setText(modelStringArray[0]);
-        heartRateTextView.setText(modelStringArray[1]);
-        bloodPressureTextView.setText(modelStringArray[2]);
-        BMITextView.setText(modelStringArray[3]);
-        ageTextView.setText(modelStringArray[4]);
-        stressTextView.setText(modelStringArray[5]);
-        //attentionTextView.setText(modelStringArray[6]);
-        //meditationTextView.setText(modelStringArray[7]);
-        probabilityTextView.setText(modelStringArray[8]+"% chances of having a heart attack.");
+        identityTextView.setText(modelStringArray[0]);
+        openDateTextView.setText(modelStringArray[1]);
+        closeDateTextView.setText(modelStringArray[2]);
     }
 }

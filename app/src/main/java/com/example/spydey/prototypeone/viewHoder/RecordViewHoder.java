@@ -16,12 +16,15 @@ import com.example.spydey.prototypeone.UserData;
 
 public class RecordViewHoder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public TextView textView;
+    public TextView titleTextView, openTimeDateTextView, closeTimeDateTextView;
+
     public View itemView;
 
     public RecordViewHoder(final View itemView) {
         super(itemView);
-        textView = (TextView) itemView.findViewById(R.id.recordName);
+        titleTextView = (TextView) itemView.findViewById(R.id.recordName);
+        openTimeDateTextView =(TextView) itemView.findViewById(R.id.openTimeDate);;
+        closeTimeDateTextView= (TextView) itemView.findViewById(R.id.closeTimeDate);
         this.itemView = itemView;
     }
 

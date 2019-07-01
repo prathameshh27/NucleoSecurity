@@ -2,53 +2,21 @@ package com.example.spydey.prototypeone;
 
 import android.util.Log;
 
+import java.util.Date;
+
 public class UserData {
-    protected String diabetes, heartrate, bloodpressure, bmi, age, probability, stress, meditation, attention;
+    protected String is_user, open, close;
+    //protected Date open, close;
 
     public UserData() {
-        this.diabetes = " ";
-        this.heartrate = " ";
-        this.bloodpressure = " ";
-        this.bmi = " ";
-        this.age = " ";
-        this.probability = " ";
-        this.stress = " ";
-        this.meditation = " ";
-        this.attention = " ";
-        Log.i("customLog", "UserData -> Default Constructor: executed");
+        this.is_user = "debug String";
+        this.open = "now()";
+        this.close = "now()";
     }
 
-    public UserData(String diabetes, String heartrate, String bloodpressure, String bmi, String age,
-                    String probability, String stress, String meditation, String attention) {
-        this.diabetes = diabetes;
-        this.heartrate = heartrate;
-        this.bloodpressure = bloodpressure;
-        this.bmi = bmi;
-        this.age = age;
-        this.probability = probability;
-        this.stress = stress;
-        this.meditation = meditation;
-        this.attention = attention;
-
-        Log.i("customLog", "UserData -> Parametric Constructor: "+diabetes+" "+heartrate+" "+bloodpressure+" "+bmi+" "+age+" "+probability);
-    }
-
-    public String getDiabetes() {
-        return diabetes;
-    }
-    public String getHeartrate() {
-        return heartrate;
-    }
-    public String getBloodpressure() {
-        return bloodpressure;
-    }
-    public String getBmi() {
-        return bmi;
-    }
-    public String getAge() {
-        return age;
-    }
-    public String getProbability() {
-        return probability;
+    public UserData(String is_user, String open, String close) {
+        this.is_user = is_user;
+        this.open =open;
+        this.close = close;
     }
 }
