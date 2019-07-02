@@ -9,9 +9,9 @@ public class UserData {
     //protected Date open, close;
 
     public UserData() {
-        this.is_user = "debug String";
-        this.open = "now()";
-        this.close = "now()";
+        this.is_user = "Identity";
+        this.open = "Date & Time";
+        this.close = "Date & Time";
     }
 
     public UserData(String is_user, String open, String close) {
